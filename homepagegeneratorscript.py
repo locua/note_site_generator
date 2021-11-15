@@ -18,10 +18,10 @@ main="""<!DOCTYPE html>
 <h1> Index of stylus notes </h1>
 """
 
-for root, dirs, files, in os.walk("./Working and notes"):
+for root, dirs, files, in os.walk("./working-and-notes"):
     for _d in dirs:
         htm_fil[_d] = []
-        for files in os.walk("./Working and notes\/" +_d):
+        for files in os.walk("./working-and-notes/" +_d):
             for f in files:
                 if isinstance(f, list) and len(f)>0:
                     for _f in f:
